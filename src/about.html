@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            function validateEmail(email) {
+                let emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                let mail = email.value;
+                return mail.match(emailRegex);
+            }
+
+            function validateContactForm() {
+                let name = document.getElementById("fname");
+                let lname = document.getElementById("lname");
+                let email = document.getElementById("email");
+                let country = document.getElementById("country");
+                let subject = document.getElementById("subject");
+
+                if (name.value == "" || lname.value == "") {
+                    window.alert("Please enter valid Name and Lastname.")
+                    name.focus();
+                    return false;
+                }
+
+                if(validateEmail(email) == null) {
+                    window.alert("Please type valid email.");
+                    email.focus();
+                    return false;
+                }
+            }
+        </script>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/video.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/gallery.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/about.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    </head>
+    <body class="aboutbody">
+        <header>
+            <nav class="nav navblock">
+                <a href="video.html">Video</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="home.html">Home</a>
+            </nav>
+        </header>
+        <div style="z-index: 10; justify-content: center" class="imgcontainer">
+            <section>
+                <img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/16730232_1471582552876473_5948669111707807310_n.jpg?_nc_cat=0&oh=4ea617693e6c5d81df9fa63310a671ba&oe=5BC0D4B9">
+            </section>
+        </div>
+        <div class="infocontactbox">
+            <div class="textbox">
+                <p>Since i can remember i suffered for energy overload, which i have use to get as good as i can in sports.<br /><br />
+                    I started playing soccer (it's not football in US) in my hometown Bełchatów, i tried BJJ before finals in High School, <br /><br />
+                    then K1 at 1st year of college. I am Warsaw University of Technology graduate, where football has found me. I was playing for Warsaw Eagles for 6 years in the highest division in the country, i'm also very proud to be a national team representive. <br /><br />
+                    But i also had an opportunity to represent the country at 2016 Kabaddi (kinda tag and go) World Cup in Ahmedabad, India. <br /><br />
+                    Huge fan of motorbike offroad which i had to leave after moving to Warsaw before studies, but i didn't say my last word about riding.<br /><br />
+                    Additionaly i'm interested in new technologies, start ups sector and automotive.<br /><br />
+                    In my spare time i travel, spending huge loads of time with friends and trying to have as much fun as it possible.</p>
+            </div>
+            <div class="inputcontainer">
+                <div>
+                    <label style="font-size: 30px;">CONTACT ME</label>
+                    <form name="myForm" onsubmit="return validateContactForm()" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="mail" id="email" placeholder="Your email..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">Poland</option>
+                            <option value="canada">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:210px; width:150px;"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+    </body></html>
