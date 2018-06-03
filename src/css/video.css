@@ -8,7 +8,7 @@
     top: 65px;
 }
 .videocontainer iframe{
-    border: 2px dashed #fcce02fd;
+    border-top: 2px dashed #fcce02fd;
     z-index: 10;
 }
 .textcontainer {
