@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+ */
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    }
+.navblock {
+    background-color: rgba(0, 0, 0, 0.796);
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    padding: 1%;
+    z-index: 20;
+}
+.nav {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+a:link {
+    font-family: 'Titillium Web', sans-serif;
+    color: #fcce02fd;
+    text-decoration: none;
+}
+a:visited {
+    font-family: 'Titillium Web', sans-serif;
+    color: #fcce02fd;
+}
+a:hover {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 231, 93);
+}
+a:active {
+    font-family: 'Titillium Web', sans-serif;
+    color: #fcce02fd;
+}
+#section1style {
+    white-space: nowrap;
+    color: #fcce02fd;
+    font-size: 45px;
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: normal;
+}
+.section2 p {
+    color: #fcce02fd;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    text-align: right;
+}
+.section2 {
+    border-top: 1px dashed #fcce02fd;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.844);
+    top: 100px;
+    padding: 4%;
+}
+.section {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.844);
+    top: 100px;
+    padding: 1%;
+    text-align: right;
+}
+.gallerybody {
+    background-color: rgb(141, 139, 139);
+    position: relative;
+}
+.homebody {
+    background-image: url("../pictures/background2.JPG");
+    position: relative;
+}
+.videobody {
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/12523029_1012150302159441_7829595006381017465_n.jpg?_nc_cat=0&_nc_eui2=AeE6-oFAH1EZueAvttF5GocWWvO6X4cfyx4gVLwAfLjB1xVBeeKF2JVY4JQ19pvEnc7P1mJpIxgUOVq4TpwzEJJ_r8EyL9cCdzJdpyipLBXf3A&oh=9efa976097a21a2ab240d5dd4b070d37&oe=5B78C60A");
+    position: relative;
+}
+.aboutbody {
+    background-image: url("http://i0.kym-cdn.com/entries/icons/original/000/019/330/foobaw.jpg");
+    position: relative;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.footer {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.844);
+}
+.socialmedia {
+    z-index: 2;
+    position: relative;
+    top: 280px;
+}
+.socialmediastyle {
+    justify-content: space-around;
+    color: #555349fd;
+    font-family: 'Gugi', cursive;
+    font-size: 15px;
+    top: 8px;
+}

@@ -1,0 +1,115 @@
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 350px;
+    max-height: 450px;
+}
+.imgcontainer img {
+    top: 65px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    border: 2px dashed #fcce02fd;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.textbox {
+    position: relative;
+    max-width: 400px;
+    max-height: 100%;
+    top: 100px;
+}
+
+.textbox p {
+    background-color: rgba(0, 0, 0, 0.699);
+    border: 1px solid #fcce02fd;
+    color: #fcce02fd;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 2%;
+}
+/* Input tables */
+input[type=text], select, textarea {
+    padding: 6px;
+    border: 2px dashed #070600;
+    background-color: #fcce02cb;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    /* display: flex; */
+    padding: 0%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #fcce02fd;
+    font-size: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Anton', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #fcce02cb;
+    color: rgb(10, 1, 1);
+    padding: 5px 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Anton', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+.inputcontainer {
+    display: flex;
+    top: 150px;
+    position: relative;
+    border: 2px dotted #fcce02cb;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 1.5%;
+    max-width:450px;
+    max-height: 440px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.infocontactbox {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
