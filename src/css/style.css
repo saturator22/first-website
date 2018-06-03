@@ -114,7 +114,8 @@ a:active {
     text-align: right;
 }
 .gallerybody {
-    background-color: rgb(141, 139, 139);
+    background-image: url("../pictures/background3.jpg");
+    /* background-color: rgb(141, 139, 139); */
     position: relative;
 }
 .homebody {
