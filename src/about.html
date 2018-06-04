@@ -7,7 +7,16 @@
                 let mail = email.value;
                 return mail.match(emailRegex);
             }
-
+            function validateName(name) {
+                let nameRegex = /((?=.{2,20}$)[A-Z]{1}[a-z]*(\s+[A-Z]{1}[a-z]*)+)/;
+                let fname = name.value;
+                return fname.match(nameRegex);
+            }
+            function validateLastName(lname) {
+                let lnameRegex = /((?=.{2,20}$)[A-Z]{1}[a-z]*(\s+[A-Z]{1}[a-z]*)+)/;
+                let sname = lname.value;
+                return sname.match(lnameRegex);
+            }
             function validateContactForm() {
                 let name = document.getElementById("fname");
                 let lname = document.getElementById("lname");
@@ -15,7 +24,7 @@
                 let country = document.getElementById("country");
                 let subject = document.getElementById("subject");
 
-                if (name.value == "" || lname.value == "") {
+                if (validateName(name) == null || validateLastName(lname) == null) {
                     window.alert("Please enter valid Name and Lastname.")
                     name.focus();
                     return false;
